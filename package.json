@@ -1,6 +1,6 @@
 {
   "name": "@vibecontrols/vibe-plugin-security-dast-preview",
-  "version": "2026.528.1",
+  "version": "2026.528.2",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

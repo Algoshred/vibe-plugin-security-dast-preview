@@ -17,7 +17,7 @@ import type {
 import { ZapBaselineProvider } from "./provider.js";
 
 const PLUGIN_NAME = "security-dast-preview";
-const PLUGIN_VERSION = "2026.528.1";
+const PLUGIN_VERSION = "2026.528.2";
 
 export const createPlugin: VibePluginFactory = (_ctx: ProfileContext): VibePlugin => {
   const provider = new ZapBaselineProvider();
@@ -41,7 +41,7 @@ export const createPlugin: VibePluginFactory = (_ctx: ProfileContext): VibePlugi
     name: PLUGIN_NAME,
     version: PLUGIN_VERSION,
     description:
-      "OWASP ZAP baseline DAST scan for the deploy.preview lifecycle stage. Wave 2 scaffold.",
+      "OWASP ZAP baseline DAST scan (zap-baseline.py via Docker) for the deploy.preview lifecycle stage.",
     tags: ["backend", "provider", "integration"],
     capabilities: {
       storage: "rw",
